@@ -68,11 +68,29 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 
 <html>
+<style>
+
+.middle{
+
+position: absolute;
+  width: 600px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+
+
+
+}
+
+
+
+</style>
    <body>
-   
-      result of addition : {{ msg }}
-      <h2><a href = "\">go back to home page</a></h2>
-      
+   <div class="middle">
+      <h1>result of addition : {{ msg }}!</h1>
+      </div>
    </body>
 </html>
 
@@ -107,6 +125,9 @@ function w3_close() {
 {% endblock %}
 
 </body>
+
+
+
 
 
 
